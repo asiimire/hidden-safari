@@ -1,0 +1,21 @@
+.treks-list {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .treks-list h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .treks-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .treks-list ul li {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+  }

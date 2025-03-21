@@ -1,0 +1,15 @@
+.highlighted-events {
+    text-align: center;
+    padding: 20px;
+    background-color: #e0e0e0;
+  }
+  
+  .highlighted-events h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .highlighted-events p {
+    font-size: 1.2rem;
+    color: #555;
+  }

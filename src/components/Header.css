@@ -1,0 +1,76 @@
+/* Header Container */
+.header {
+  background-image: url('/public/header-bg.jpg'); /* Path to your image */
+  background-size: cover; /* Ensures the image covers the entire header */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating*/
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Logo and Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #1abc9c; /* Highlight color on hover */
+}
+
+/* Tagline and Description */
+.tagline {
+  margin: 40px 0;
+}
+
+.tagline h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.tagline p {
+  font-size: 1.2rem;
+  color: #bdc3c7; /* Light gray for description */
+}
+
+/* Statistics */
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.stat-item p {
+  font-size: 1rem;
+  color: #bdc3c7; /* Light gray for stats text */
+}
