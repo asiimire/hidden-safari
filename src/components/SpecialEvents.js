@@ -7,40 +7,20 @@ const HighlightedEvents = () => {
     {
       id: 4,
       image: '/kampala.jpg', // Path to your image
-      name: 'Kampala',
-      details: 'X 4 6',
+      name: 'Hunting',
     },
     {
       id: 5,
       image: '/jinja.jpg', // Path to your image
-      name: 'Jinja',
-      details: 'X 4 6',
-    },
-    {
-      id: 1,
-      image: '/kilimanjaro.jpg', // Path to your image
-      name: 'Kilimanjaro',
-      details: 'X 4 6',
-    },
-    {
-      id: 2,
-      image: '/madagascar.jpg', // Path to your image
-      name: 'Madagascar',
-      details: 'X 4 6',
-    },
-    {
-      id: 3,
-      image: '/cape-town.jpg', // Path to your image
-      name: 'Capo-Town',
-      details: 'X 4 6',
+      name: 'Training Camp',
     },
     
   ];
 
   return (
     <div className="highlighted-events">
-      <h2>Highlighted Events</h2>
-      <p>Recommended camps by our instructors</p>
+      <h2>Special Events</h2>
+      <p>Join us for unique, limited-time gatherings that celebrate remarkable occasions</p>
       <div className="cards-container">
         {events.map((event) => (
           <div key={event.id} className="event-card">

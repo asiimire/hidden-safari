@@ -1,32 +1,28 @@
 import React from 'react';
-import './HighlightedEvents.css';
+import './SpecialEvents';
 
-const HighlightedEvents = () => {
+const SpecialEvents = () => {
   // Data for the cards
   const events = [
     {
       id: 4,
       image: '/Kampala.jpg', // Path to your image
       name: 'Kruger Park',
-      details: 'X 4 6',
     },
     {
       id: 5,
       image: '/jinja.jpg', // Path to your image
       name: 'Western Cape',
-      details: 'X 4 6',
     },
     {
       id: 1,
       image: '/kilimanjaro.jpg', // Path to your image
       name: 'Addo Park',
-      details: 'X 4 6',
     },
     {
       id: 2,
       image: '/madagascar.jpg', // Path to your image
       name: 'Masai Mara',
-      details: 'X 4 6',
     },
     
     
@@ -49,4 +45,4 @@ const HighlightedEvents = () => {
   );
 };
 
-export default HighlightedEvents;
+export default SpecialEvents;

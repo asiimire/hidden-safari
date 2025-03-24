@@ -7,33 +7,24 @@ const HighlightedEvents = () => {
     {
       id: 4,
       image: '/Kampala.jpg', // Path to your image
-      name: 'Kampala',
-      details: 'X 4 6',
+      name: 'Kilimanjaro Trek',
     },
     {
       id: 5,
       image: '/jinja.jpg', // Path to your image
-      name: 'Jinja',
-      details: 'X 4 6',
+      name: 'Mountain Kenya Trek',
     },
     {
       id: 1,
       image: '/kilimanjaro.jpg', // Path to your image
-      name: 'Kilimanjaro',
-      details: 'X 4 6',
+      name: 'Rwenzori Trek',
     },
     {
       id: 2,
       image: '/madagascar.jpg', // Path to your image
-      name: 'Madagascar',
-      details: 'X 4 6',
+      name: 'Atlas Trek',
     },
-    {
-      id: 3,
-      image: '/cape-town.jpg', // Path to your image
-      name: 'Capo-Town',
-      details: 'X 4 6',
-    },
+    
     
   ];
 
