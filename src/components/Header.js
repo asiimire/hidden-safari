@@ -1,9 +1,34 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Header.css';
 
 const Header = () => {
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const shouldStick = window.scrollY > 50;
+      if (shouldStick !== isSticky) {
+        setIsSticky(shouldStick);
+      }
+    };
+
+    const checkMobile = () => {
+      if (window.innerWidth < 768) {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    window.addEventListener('resize', checkMobile);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('resize', checkMobile);
+    };
+  }, [isSticky]);
+
   return (
-    <header className="header">
+    <header className={`header ${isSticky ? 'sticky' : ''}`}>
       {/* Logo and Navigation */}
       <div className="navbar">
         <h1 className="logo">HiddenSafari</h1>
