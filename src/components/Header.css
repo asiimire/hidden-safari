@@ -1,6 +1,6 @@
 /* Header Container */
 .header {
-  background-image: url('/public/header-bg.jpg'); /* Path to your image */
+  position: relative;
   background-size: cover; /* Ensures the image covers the entire header */
   background-position: center; /* Centers the image */
   background-repeat: no-repeat; /* Prevents the image from repeating*/
@@ -8,6 +8,19 @@
   padding: 20px;
   text-align: center;
   transition: all 0.3s ease; /* Smooth transition */
+}
+
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('/public/header-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  z-index: -1; /* Puts it behind content */
 }
 
 .header.sticky {
